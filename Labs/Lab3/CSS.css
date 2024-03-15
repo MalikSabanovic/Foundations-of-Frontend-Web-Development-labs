@@ -1,0 +1,50 @@
+body{
+    background-color:#85AFD4;
+}
+body{
+    font-family: "Lato", sans-serif;
+}
+body h1{
+    font-weight: bold;
+}
+body h3{
+    font-weight: bold;
+}
+body p{
+    color:#FFFFFF ;
+}
+.button input[type="submit"] {
+    background-color: red; 
+    color: white; 
+    border-radius: 20px;
+    padding: 10px 20px; 
+    cursor: pointer; 
+}
+.button input[type="submit"],
+
+.button button[type="submit"] {
+    background-color: red; 
+    color: white; 
+    border-radius: 20px; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 2px solid white; /* Set border to 2px, white, and solid */
+    padding: 8px;
+    text-align: center;
+    color: white; /* Set text color to white */
+}
+.first-last{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lname{
+    margin-left: 20px;
+}

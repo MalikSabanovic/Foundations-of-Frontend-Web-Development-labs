@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    display: flex;
+    background-color: #F6C1A4;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.subheader{
+    padding-left: 50px;
+}
+
+.subheader h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 64px;
+    color:#000000;
+}
+.heading{
+    padding-top: 100px;
+}
+.second-section{
+    margin-top: 40px;
+    padding-left: 50px;
+}
+.second-section p{
+    font-size: 20px;
+}
+
+.dear{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.third-section{
+    display: flex;
+    background-color: #F5F5EB;
+    margin-top: 30px;
+    justify-content: space-between ;
+}
+.first{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+}
+.first p{
+    margin-top: 20px;
+    font-weight: bold;
+    flex-direction: column;
+}
+.fourth-section p{
+    margin-left: 50px;
+
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #F6C1A4;
+}
+.flower{
+    margin-top: 20px;
+    font-size: 20px;
+}
