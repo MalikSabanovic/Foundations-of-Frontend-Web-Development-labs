@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users Contacts</title>
+
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: darkgrey;
+        }
+
+        tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+
+        .action-btn {
+            padding: 5px 10px;
+            background-color: #f2f2f2;
+            color: black;
+            border: 1px solid black;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .action-btn:hover {
+            background-color: lightblue;
+        }
+
+        .user-image {
+            width: 30px; 
+            vertical-align: middle;
+            border-radius: 50%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <table id="user-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>COUNTRY</th>
+                <th>EMAIL</th>
+                <th>ACTION</th>
+            </tr>
+        </thead>
+        <tbody id="user-table-body">
+        </tbody>
+    </table>
+
+    <script>
+        const users = [
+            { id: 1, name: 'John Doe', country: 'Afghanistan', email: 'john1@example.com', image:'https://images.nightcafe.studio//assets/man-in-suit.jpg?tr=w-1600,c-at_max' },
+            { id: 2, name: 'Jane Smith', country: 'Albania', email: 'jane2@example.com', image: 'https://assets-global.website-files.com/624ac40503a527cf47af4192/654b536c8c46e155141a426d_ai-face-generator-how.png' },
+            { id: 3, name: 'Jim Brown', country: 'Algeria', email: 'jim3@example.com', image: 'https://mymodernmet.com/wp/wp-content/uploads/2019/09/100k-ai-faces-6.jpg' },
+            { id: 4, name: 'Jake White', country: 'Andorra', email: 'jake4@example.com', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT560YchaS-eXqK80muaCyqQE5vcSsVb3jkyQ&usqp=CAU' },
+            { id: 5, name: 'Julie Black', country: 'Angola', email: 'julie5@example.com', image: 'https://ddgimgs-f43e.kxcdn.com/2029874/4ckt4c_b14e308c1186688ff1d03006df188561e4c0a2dd.jpg' },
+            { id: 6, name: 'Jennifer Green', country: 'Antigua and Barbuda', email: 'jennifer6@example.com', image: 'https://mymodernmet.com/wp/wp-content/uploads/2019/09/100k-ai-faces-5.jpg' }
+        ];
+
+        function createUserRow(user) {
+            const row = document.createElement('tr');
+
+            ['id', 'name', 'country', 'email'].forEach(prop => {
+                const cell = document.createElement('td');
+                if (prop === 'name') {
+                    const image = document.createElement('img');
+                    image.src = user.image;
+                    image.alt = user.name + "'s Image";
+                    image.classList.add('user-image');
+                    cell.appendChild(image);
+                    cell.appendChild(document.createTextNode(' ' + user[prop])); 
+                } else {
+                    cell.textContent = user[prop];
+                }
+                row.appendChild(cell);
+            });
+
+            const actionCell = document.createElement('td');
+            const actionButton = document.createElement('button');
+            actionButton.textContent = 'Click';
+            actionButton.classList.add('action-btn');
+            actionCell.appendChild(actionButton);
+            row.appendChild(actionCell);
+
+            return row;
+        }
+
+        function populateTable(users) {
+            const tableBody = document.getElementById('user-table-body');
+
+            tableBody.innerHTML = '';
+
+            users.forEach(user => {
+                const row = createUserRow(user);
+                tableBody.appendChild(row);
+            });
+        }
+
+        populateTable(users);
+    </script>
+
+</body>
+
+</html>
