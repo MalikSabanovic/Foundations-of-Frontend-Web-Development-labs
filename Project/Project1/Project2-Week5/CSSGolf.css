@@ -1,0 +1,458 @@
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background: #161616;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+p{
+    font-size: 0.9em;
+    max-width: 35em;
+    line-height: 27px;
+}
+h1,h2{
+    font-weight: 300;
+}
+h1{
+    margin: 0.5em 0;
+    font-size: 3em;
+}
+.specs h2, .about h2{
+    font-size: 2em;
+    padding-left: 1.2em;
+    border-left: 0,1em #5bc7ca solid;
+}
+ul{
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+    color: #fff;
+
+}
+section{
+    padding: 2.5em;
+
+}
+nav, .infos, .info,
+.specs-header, .specs li,
+.stats{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Set all flex layouts*/
+
+.specs, .icon,
+.panel:first-child,
+.panel:last-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    height: 100vh;
+    min-height: 30em;
+    background: url(https://cf-cdn-v6.volkswagen.at/media/Abstract_Image_B1920_Component.Box_Stage_Fullscreen_Item_Media_Image_Image_Component/39272-stage-315200-media-child-image-b1920/dh-1920-ef522c/2c04d7c0/1700719862/gl5463-d5-side-women.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+/*Navbar*/
+nav{
+    padding: 1.5em 2.5em;
+    position: relative;
+}
+.menu-btn{
+    display: none;
+}
+.brand{
+    font-size: 1.3em;
+}
+.brand img{
+    height: auto;
+    width: 55px;
+}
+nav li{
+    display: inline-block;
+    margin: 0 0.8em;
+    text-align: center;
+}
+nav a {
+    color: #fff;
+}
+nav a:hover {
+    color: #FFFFFF;
+}
+/*Header Body*/
+.header-body{
+    padding: 2.5em;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+.header-body p{
+    max-width: 25em;
+}
+
+/*About Section*/
+
+.heading h2{
+    margin-bottom: 1em;
+}
+.heading p{
+    margin-left: 3em;
+    display: inline-block;
+}
+.infos{
+    gap: 2em;
+}
+.infos, .heading{
+    padding: 5em 1em;
+}
+.info img{
+    max-width: 6em;
+    margin-right: 1em;
+}
+.info h3{
+    margin-bottom: 0,5em;
+}
+.info p{
+    max-width: 15 em;
+}
+
+/*Specs Section*/
+.specs {
+    background: url(https://cf-cdn-v6.volkswagen.at/media/Abstract_Image_B960_Component.Content_Model_HighlightFeatureSection_Item_Content_Gallery_Item_Component/39272-463632-463636-315152-content-gallery-315155-b960/dh-1235-e0864f/3c4a03c5/1700719865/gl5467-back-women.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 40em;
+    position: relative;
+    padding-top: 8em;
+    padding-bottom: 8em;
+}
+.specs-header, .specs ul{
+    position: relative;
+    z-index: 1;
+}
+.specs ul{
+    width: 40em;
+    margin-top: 3em;
+}
+.specs li{
+    padding: 0.6em 0;
+    border-bottom: #555 1px solid;
+}
+
+.specs li span:first-child{
+    color: #888;
+}
+
+/*Panels Section*/
+
+.panels{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 40em;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 8em;
+}
+.panel > div {
+    padding: 1em;
+}
+.panels-sm{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.panel:first-child,
+.panel:last-child{
+    padding: 1em;
+}
+.panel:first-child{
+    background-color: #a5be33;
+}
+.panel:last-child{
+    background-color: #fff;
+    color: #555;
+}
+.panel:nth-child(2){
+    background: url(https://cf-cdn-v6.volkswagen.at/media/Abstract_Image_B960_Component.Content_Model_HighlightFeatureSection_Item_Content_Gallery_Item_Component/39272-463632-463636-315152-content-gallery-315153-b960/dh-1237-e0864f/1565b148/1700719865/gl5551-golf-side-view.png) no-repeat center;
+}
+.panel:nth-child(3) {
+    background: url(https://cf-cdn-v6.volkswagen.at/media/Abstract_Image_B960_Component.Content_Model_HighlightFeatureSection_Item_Content_Gallery_Item_Component/39272-463632-463636-315152-content-gallery-315156-b960/dh-1239-e0864f/af9e6abc/1700719865/gl5552-woman-in-front-of-golf-street-1x1.png) no-repeat center;
+}
+.panel:nth-child(2),
+.panel:nth-child(3){
+    background-size: cover;
+    position: relative;
+}
+.panel h2{
+    margin: 0.7em 0;
+}
+.panel-lg{
+    background: url(https://cf-cdn-v6.volkswagen.at/media/Abstract_Image_B960_Component.Content_SimpleMedia_Image_Component/39272-463612-463616-315131-463617-child-b960/dh-976-c2426a/b4ab1169/1700719862/gl5472-interior-innovision-cockpit.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.icon{
+    font-size: 2em;
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;
+}
+.panel:first-child .icon{
+    border: 3px #fff solid;
+}
+.panel:nth-child(4) .icon{
+    border: 3px #555 solid;
+}
+
+/*Car Stats Section*/
+
+.car-stats{
+    padding: 5em 1em;
+}
+.stats {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.stats > div{
+    margin-bottom: 1em;
+    position: relative;
+    min-width: 10em;
+}
+.stats > div h1:nth-child(2) {
+    color:#282828 ;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+.stats h5{
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 0.7em;
+}
+
+.counter{
+    margin: 0.1em 0;
+}
+
+/*Circle*/
+
+.car{
+    padding: 4em 1em 4em 1em;
+    margin-top: 8em;
+}
+
+.circle{
+    border: 2px #ccc solid;
+    border-radius: 50%;
+    width: 100%;
+    max-width: 800px;
+    margin:  0 auto;
+    position: relative;
+    background: #161616;
+    animation: 
+       glow 4s ease-in-out infinite;
+    aspect-ratio: 3 / 1;
+}
+.car img{
+    width: 70%;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.circle div {
+    border: inherit;
+    border-radius: inherit;
+    background: inherit;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    animation: inherit;
+}
+.circle .inner-md-circle {
+    width: 75%;
+    height: 75%;
+    top: 10%;
+    animation-delay: 3s;
+}
+
+.circle .inner-sm-circle{
+    width: 50%;
+    height: 50%;
+    top: 20%;
+    animation-delay: 6s;
+}
+
+/*Cicle glow animation*/
+@keyframes glow{
+    0% {
+        box-shadow: none;
+    }
+    50% {
+        box-shadow: 0 0 1em #a5be33;
+    }
+    100% {
+        box-shadow: none;
+    }
+}
+
+/*Responsiev desing at 990px*/
+
+@media screen and (max-width: 990px){
+    .menu-btn{
+        display: block;
+        font-size: 1.2em;
+        cursor: pointer;
+    }
+    .menu-btn:hover{
+        color: #eee;
+    }
+    .brand,.menu-btn{
+        position: relative;
+        z-index: 1;
+    }
+    .menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0;
+        background: #161616;
+        width: 100%;
+        z-index: 0;
+        height: 0;
+        overflow-y: hidden;
+        transition: 0.6s ease-in-out;
+    }
+    .menu-open{
+        height: 17em;
+        padding: 5em 0 1em 0;
+    }
+    .menu li{
+        display: block;
+        margin: 1em 0;
+    }
+    .specs ul{
+        width: 80vw;
+    }
+    .infos, .info, .stats{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .infos{
+        gap: 3em;
+
+    }
+    .info img{
+        margin: 0 0 1em 0;
+    }
+    .panels, .panels-sm{
+        grid-template-columns: 1fr;
+    }
+    .panel, .panel-lg{
+        min-height: 15em;
+    }
+    .panel:nth-child(2){
+        order: 1;
+    }
+}
+
+@media screen and (max-width: 580px){
+    html{
+        font-size: 14px;
+    }
+}
+
+/*Footer responsive desing*/
+
+footer{
+    background-color: #111;
+}
+.footer-container{
+    width: 100%;
+    padding: 70px 30px 20px ;
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+}
+.social-icons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.social-icons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+
+
+/* Hover affect on social media icon */
+
+
+.social-icons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.social-icons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footer-nav{
+    margin: 30px 0;
+}
+.footer-nav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footer-nav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footer-nav ul li a:hover{
+    opacity: 1;
+}
+.footer-bottom{
+    background-color: #000;
+    padding: 20px;
+}
+@media (max-width: 770px){
+    .footer-nav ul{
+        flex-direction: column;
+    } 
+    .footer-nav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .social-icons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
