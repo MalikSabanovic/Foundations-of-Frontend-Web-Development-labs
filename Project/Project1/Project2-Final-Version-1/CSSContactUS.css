@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+/*--------------------------------------Theme switcher--------------------------*/
+#icon{
+  width: 30px;
+  cursor: pointer;
+}
+
+nav ul{
+  flex: 1;
+  text-align: right;
+}
+
+:root{
+  --primary-color: #ffffff;
+  --secondary-color: #161616;
+  --third-color:#eeeeee;
+  --fourth-color:#002c60;
+
+}
+.dark-theme{
+  --primary-color: #161616;
+  --secondary-color: #ffffff;
+  --third-color:#002c60;
+  --fourth-color:#eeeeee;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  body{
+    background: var(--primary-color);
+  }
+p{
+    font-size: 0.9em;
+    max-width: 35em;
+    line-height: 27px;
+}
+h1,h2{
+    font-weight: 300;
+}
+h1{
+    margin: 0.5em 0;
+    font-size: 3em;
+}
+
+ul{
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+    color: #fff;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header{
+    height: 70vh;
+    min-height: 20em;
+    background: url(https://cf-cdn-v6.volkswagen.at/media/Abstract_Image_B1920_Component.Box_Stage_Fullscreen_Item_Media_Image_Image_Component/38877-stage-312090-media-child-image-b1920/dh-2048-ef522c/b2de34da/1700726088/service-contact-customer-at-home-mobile-phone-1.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+
+}
+.header-body{
+    padding: 2.5em;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+.header-body h1{
+    margin-left: 20px;
+    color: #fff;
+}
+.header-body p{
+    max-width: 25em;
+    color: #fff;
+}
+
+
+/*Navbar*/
+
+nav{
+    padding: 1.5em 2.5em;
+    position: relative;
+}
+.menu-btn {
+    display: none;
+}
+.brand {
+    font-size: 1.3em;
+    
+}
+.brand img{
+    height: auto;
+    width: 55px;
+}
+nav li{
+    display: inline-block;
+    margin: 0 0.8em;
+    text-align: center;
+}
+nav a {
+    color: #fff;
+}
+nav a:hover {
+    color: #eee;
+}
+
+/*--------------------------------------Second Section-----------------------------------------------*/
+.second-section{
+    display: flex;
+    background-color: var(--primary-color);
+    color: var(--fourth-color);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/*----------------------------------------Fourth Section--------------------------------------------*/
+.fourth-section{
+    display: flex;
+    background-color: var(--primary-color);
+    margin-top: 40px;
+    color: var(--fourth-color);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/*------------------------------------------FAQ-----------------------------------------------------*/
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #e6e6e6;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.car-container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.car-info {
+    font-weight: bold;
+}
+
+.button-container {
+    display: flex;
+    gap: 5px;
+}
+
+.button-container button {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #eeeeee;
+    background-color: #002c60;
+}
+
+.button-container button:hover {
+    background-color: #024ba3;
+}
+
+
+
+/*------------------------------------------API-----------------------------------------------------*/
+
+.fifth-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.map {
+  border: 4px solid var(--fourth-color);
+  width: 100%;
+  height: 70vh;
+}
+/*------------------------------------------------------------Line-----------------------------------------------------------------*/
+.Line{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.line{
+    display: block;
+    background-color: var(--fourth-color);
+    width: 2px;
+    height: 15em;
+    margin: 2em 0;
+}
+
+
+/*------------------------------------------------------------------------------Register--------------------------------------------------------------------------*/
+
+.main-form{
+    background-color: #e6e6e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form input[type="password"],
+form button[type="submit"] {
+    width: 300px;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form button[type="submit"] {
+    background-color: #002c60;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+    background-color: #024ba3;
+}
+
+#passwordStrength {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+
+/*-------------------------------------Responsivnes 580px---------------------------------------------------*/
+
+@media screen and (max-width: 580px) {
+    /*NavBar*/
+    .menu-btn{
+        display: block;
+        font-size: 1.2em;
+        cursor: pointer;
+    }
+    .menu-btn:hover{
+        color: var(--primary-color);
+    }
+    .brand,.menu-btn{
+        position: relative;
+        z-index: 1;
+    }
+    .menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0;
+        background: var(--secondary-color);
+        width: 100%;
+        z-index: 0;
+        height: 0;
+        overflow-y: hidden;
+        transition: 0.6s ease-in-out;
+    }
+    .menu-open{
+        height: 17em;
+        padding: 5em 0 1em 0;
+    }
+    .menu li{
+        display: block;
+        margin: 1em 0;
+    }
+}
+
+/*-------------------------------------------------------------Responsivnse for 770px----------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 770px) {
+    /*NavBar*/
+    .menu-btn{
+       display: block;
+       font-size: 1.2em;
+       cursor: pointer;
+   }
+   .menu-btn:hover{
+       color: var(--primary-color);
+   }
+   .brand,.menu-btn{
+       position: relative;
+       z-index: 1;
+   }
+   .menu {
+       position: absolute;
+       top: 0;
+       left: 0;
+       padding: 0;
+       background:var(--secondary-color);
+       width: 100%;
+       z-index: 0;
+       height: 0;
+       overflow-y: hidden;
+       transition: 0.6s ease-in-out;
+   }
+   .menu-open{
+       height: 17em;
+       padding: 5em 0 1em 0;
+   }
+   .menu li{
+       display: block;
+       margin: 1em 0;
+   }
+}
+
+/*--------------------------------------------------------------Responsivnse for 990px--------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 990px) {
+    /*NavBar*/
+    .menu-btn{
+       display: block;
+       font-size: 1.2em;
+       cursor: pointer;
+   }
+   .menu-btn:hover{
+       color: var(--primary-color);
+   }
+   .brand,.menu-btn{
+       position: relative;
+       z-index: 1;
+   }
+   .menu {
+       position: absolute;
+       top: 0;
+       left: 0;
+       padding: 0;
+       background: var(--secondary-color);
+       width: 100%;
+       z-index: 0;
+       height: 0;
+       overflow-y: hidden;
+       transition: 0.6s ease-in-out;
+       
+   }
+   .menu a{
+    color: var(--primary-color);
+   }
+   .menu-open{
+       height: 17em;
+       padding: 5em 0 1em 0;
+   }
+   .menu li{
+       display: block;
+       margin: 1em 0;
+   }
+}
+
+
+/*---------------------------------Footer------------------------------*/
+
+footer{
+    background-color: #111;
+    margin-top: 100px;
+}
+.footer-container{
+    width: 100%;
+    padding: 70px 30px 20px ;
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+}
+.social-icons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    
+    border-radius: 50%;
+}
+.social-icons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+
+/*Hover affect on social media icon*/
+
+.social-icons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.social-icons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footer-nav{
+    margin: 30px 0;
+}
+.footer-nav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footer-nav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footer-nav ul li a:hover{
+    opacity: 1;
+}
+.footer-bottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footer-bottom p{
+    color: white;
+    margin-left: 680px;
+    
+}
+
+/*Fotter responsivnes*/
+
+@media (max-width: 770px){
+    .footer-nav ul{
+        flex-direction: column;
+    } 
+    .footer-nav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .social-icons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
