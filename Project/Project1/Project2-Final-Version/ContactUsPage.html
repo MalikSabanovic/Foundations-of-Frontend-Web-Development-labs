@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VW Register Now</title>
+    <link rel="stylesheet" type="text/css" href="CSSContactUS.css">
+    <!-- Include jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Include jQuery Validation Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <!-- Include Toastr library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav>
+           <a href="HomePage.html" class="brand"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Volkswagen_logo_2019.svg" alt="Volkswagen"></a>
+           <ul class="menu">
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="HomePage.html#models">Models</a></li>
+            <li><a href="NewsPage.html">News</a></li>
+           </ul>
+           <img src="https://cdn-icons-png.freepik.com/512/6714/6714978.png" id="icon">
+           <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+           </div>
+        </nav>
+        <div class="header-body">
+            <div>
+                <h1>Join us</h1>
+                <p>
+                    Discover the thrill of innovation, craftsmanship, and performance firsthand. 
+                    From test drives to exclusive showcases, 
+                    immerse yourself in the world of Volkswagen like never before. 
+                    Don't miss this opportunity to explore our latest models and experience the future of driving.
+                </p>
+        </div>
+    </header>
+    
+    <div class="second-section">
+        <h1>Sign Up for full <b>VW experience</b></h1>
+    </div>
+
+    <div class="Line">
+        <span class="line"></span>
+    </div>
+
+    <div class="main-form">
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <div id="passwordStrength"></div>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="fourth-section">
+        <h1>Where can you find us?</h1>
+    </div>
+
+    <div class="Line">
+        <span class="line"></span>
+    </div>
+    
+    <div class="fifth-section">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6459.425187158376!2d18.33695933715181!3d43.84864076448498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4758c97e22a8cc3f%3A0xeab9b8114c5aee65!2sVolkswagen!5e0!3m2!1sen!2sba!4v1717157956103!5m2!1sen!2sba"
+            width="600"
+            height="450"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="map"
+        ></iframe>
+    </div>
+
+    <div class="Line">
+        <span class="line"></span>
+    </div>
+
+    <div class="container">
+        <h2><b>Your Volkswagen Shortlist</b></h2>
+        <div id="carList"></div>
+        <div id="addCarForm">
+            <input type="text" id="brandInput" placeholder="Brand">
+            <input type="text" id="modelInput" placeholder="Model">
+            <input type="number" id="yearInput" placeholder="Year">
+            <button id="addCarButton">Add Car</button>
+        </div>
+    </div>
+
+    
+
+    <footer>
+        <div class="footer-container">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/VolkswagenBiH/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/volkswagen_bh/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/Volkswagen_BA"><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-google-plus"></i></a>
+                <a href="https://www.youtube.com/channel/UCN5wvHE-DvEvFBqUnXperCg"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="footer-nav">
+                <ul><li><a href="HomePage.html">Home</a></li>
+                    <li><a href="NewsPage.html">News</a></li>
+                    <li><a href="HomePage.html#models">Models</a></li>
+                    <li><a href="ContactUsPage.html">Contact Us</a></li>
+                </ul>
+            </div> 
+        </div>
+        <div class="footer-bottom">
+            <p></p>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function(){
+            // Form validation
+            $('#contactForm').validate({
+                rules: {
+                    name: {
+                        required: true
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    dob: {
+                        required: true
+                    },
+                    password: {
+                        required: true,
+                        minlength: 8 // Minimum length for password
+                    }
+                },
+                messages: {
+                    name: {
+                        required: "Please enter your name."
+                    },
+                    email: {
+                        required: "Please enter your email address.",
+                        email: "Please enter a valid email address."
+                    },
+                    dob: {
+                        required: "Please enter your date of birth."
+                    },
+                    password: {
+                        required: "Please enter a password.",
+                        minlength: "Password must be at least 8 characters long."
+                    }
+                },
+                submitHandler: function(form){
+                    // Show success Toastr message
+                    toastr.success('Data saved successfully');
+                    // Clear form fields
+                    $('#contactForm')[0].reset();
+                    return false; // Prevent form submission
+                }
+            });
+    
+            // Update password strength indicator dynamically
+            $('#password').keyup(function(){
+                var password = $(this).val();
+                var strength = 0;
+    
+                // If password contains uppercase and lowercase letters
+                if (password.match(/[a-z]/) && password.match(/[A-Z]/)) {
+                    strength += 1;
+                }
+                // If password contains numbers
+                if (password.match(/[0-9]/)) {
+                    strength += 1;
+                }
+                // If password contains special characters
+                if (password.match(/[$&+,:;=?@#|'<>.^*()%!-]/)) {
+                    strength += 1;
+                }
+    
+                // Update password strength message dynamically
+                var strengthText = '';
+                switch(strength) {
+                    case 0:
+                        strengthText = 'Weak';
+                        break;
+                    case 1:
+                        strengthText = 'Medium';
+                        break;
+                    case 2:
+                        strengthText = 'Strong';
+                        break;
+                    case 3:
+                        strengthText = 'Very Strong';
+                        break;
+                }
+                $('#passwordStrength').html('Password Strength: ' + strengthText);
+            });
+        });
+    </script>
+    <script>
+        var icon=document.getElementById("icon");
+
+        icon.onclick=function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src="https://static.thenounproject.com/png/2853779-200.png";
+            }else{
+                icon.src="https://cdn-icons-png.freepik.com/512/6714/6714978.png";
+            }
+        }
+    </script>
+    <script src="HamburgerMenuJS.js"></script>
+    <script src="EditandDeleteJS.js"></script>
+
+</body>
+
+</html>
