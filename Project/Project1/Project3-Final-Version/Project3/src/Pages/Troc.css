@@ -1,0 +1,161 @@
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+.intro-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2em;
+    background-color:#eee;
+    color: #002c60;
+}
+
+.intro-text h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.specs {
+    background: url(https://cf-cdn-v6.volkswagen.at/media/Abstract_Image_B960_Component.Content_Model_HighlightFeatureSection_Item_Content_Gallery_Item_Component/76687-1045071-1045074-728117-content-gallery-728118-b960/dh-1539-e0864f/bfc50b6a/1700724202/tc0875t-roc-r-line-white-front-view.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 40em;
+    position: relative;
+    padding: 8em 0;
+    color: #fff;
+    text-align: center;
+}
+
+.specs-header {
+    position: relative;
+    z-index: 1;
+    padding: 0 2em;
+}
+
+.specs-header h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.specs-header span {
+    display: block;
+    font-size: 1.2em;
+    color: #ddd;
+}
+
+.specs ul {
+    width: 100%;
+    max-width: 800px;
+    margin: 3em auto 0;
+    list-style: none;
+    text-align: left;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1em;
+}
+
+.specs li {
+    padding: 0.6em;
+    border-bottom: 1px solid #555;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    color: #002c60;
+    
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    background-color: #eee;
+}
+
+.info img {
+    max-width: 50%;
+    height: 70%;
+    margin-top: 30px;
+}
+
+.info h3 {
+    margin: 0;
+    text-align: center;
+}
+
+.info p {
+    text-align: center;
+}
+
+
+
+.Line{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.line{
+    display: block;
+    background-color: #002c60;
+    width: 2px;
+    height: 15em;
+    margin: 2em 0;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 2em;
+    padding: 2em;
+}
+
+.card-container .MuiCard-root {
+    width: 345px;
+}
+
+.models-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2em;
+    background-color:#eee;
+    color: #002c60;
+}
+
+.models-text h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-container .MuiCard-root {
+        width: 100%;
+        max-width: 350px;
+        margin-bottom: 1em;
+    }
+}
